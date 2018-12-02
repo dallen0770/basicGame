@@ -26,11 +26,7 @@
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
                 background(red);
-                if (keyCode == 39) {
-                    background(orange);
-                } else if (keyCode == 37) {
-                    background(blue);
-                }
+               
             }
             
          void draw(){
@@ -43,6 +39,15 @@
                 //    drawCount++;
                // }
             }
+            
+        void keyPressed(){
+              if (keyCode == 39) {
+                    background(orange);
+                } else if (keyCode == 37) {
+                    background(blue);
+                }
+        
+        }
    
   
 
