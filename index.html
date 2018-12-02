@@ -30,6 +30,8 @@
                
             }
             
+          var scene_counter = 0;
+            
          void draw(){
                 //controls which page is being displayed
                 //state.show();       
@@ -42,18 +44,21 @@
             }
             
         void keyPressed(){
-              if (keyCode == 39) {
-                    background(image);
-                } else if (keyCode == 37) {
+            // in scene 1
+              if (keyCode == 39 && scene_counter==0) {
+                    background(orange);
+                    scene_counter +=1;
+                } else if (keyCode == 37 && scene_counter ==0) {
                     background(blue);
+                    scene_counter +=1;
                 }
-        
-        }
+                
+            // in scene 2
+            if (keyCode == 39 && scene_counter==1) {
+                    background(pink);
+                    scene_counter +=1;
+               }
    
-  
-
-
-    
         </script>
     </head>
    
