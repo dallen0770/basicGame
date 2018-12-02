@@ -19,10 +19,17 @@
             var CANVAS_HEIGHT = 500;
             var CANVAS_WIDTH = 700;
             color red = color(178,18,18);
+            color orange = color(255,83, 13);
+            color blue = color(9, 113, 178);
+            color pink = color(255, 182, 193);
             
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
-                background(red);
+                if (keyCode == 39) {
+                    background(red);
+                } else if (keyCode == 37) {
+                    background(blue);
+                }
             }
             
          void draw(){
