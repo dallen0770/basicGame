@@ -22,6 +22,7 @@
             color orange = color(255,83, 13);
             color blue = color(9, 113, 178);
             color pink = color(255, 182, 193);
+            image = loadImage("lib/pic.png");
             
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
@@ -42,7 +43,7 @@
             
         void keyPressed(){
               if (keyCode == 39) {
-                    background(orange);
+                    background(image);
                 } else if (keyCode == 37) {
                     background(blue);
                 }
