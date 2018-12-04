@@ -16,7 +16,7 @@
         <script type="text/processing" data-processing-target="mycanvas">
             /* @pjs globalKeyEvents="true"; */  
             //dimensions
-            var CANVAS_HEIGHT = 700;
+            var CANVAS_HEIGHT = 500;
             var CANVAS_WIDTH = 700;
             color red = color(178,18,18);
             color orange = color(255,83, 13);
@@ -54,10 +54,10 @@
                 }
                 
             // in scene 2
-            //if (keyCode == 39 && scene_counter==1) {
-                    //background(pink);
-                   // scene_counter +=1;
-               //}
+            if (keyCode == 39 && scene_counter==1) {
+                    background(pink);
+                    scene_counter +=1;
+            }
         }
    
         </script>
