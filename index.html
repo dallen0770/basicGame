@@ -18,6 +18,7 @@
             //dimensions
             var CANVAS_HEIGHT = 500;
             var CANVAS_WIDTH = 700;
+            PImage b;
             color red = color(178,18,18);
             color blue = color(9, 113, 178);
             color pink = color(255, 182, 193);
@@ -27,6 +28,8 @@
           void setup() {
                 size(CANVAS_WIDTH,CANVAS_HEIGHT);
                 background(red);
+                b = loadImage("res/GWC.png");
+
                
             }
             
@@ -48,8 +51,6 @@
               if (keyCode == 39 && scene_counter==0) {
                     // @pjs preload must be used to preload the image
                     /* @pjs preload="laDefense.jpg"; */
-                    PImage b;
-                    b = new loadImage("res/GWC.png");
                     image(b, 0, 0);
                     scene_counter +=1;
                 } else if (keyCode == 37 && scene_counter ==0) {
