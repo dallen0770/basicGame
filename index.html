@@ -47,7 +47,8 @@
         void keyPressed(){
             // in scene 1
               if (keyCode == 39 && scene_counter==0) {
-                    loadImage(orange);
+                    b = loadImage(orange);
+                    background(b);
                     scene_counter +=1;
                 } else if (keyCode == 37 && scene_counter ==0) {
                     background(blue);
