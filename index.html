@@ -47,6 +47,9 @@
         void keyPressed(){
             // in scene 1
               if (keyCode == 39 && scene_counter==0) {
+                    // @pjs preload must be used to preload the image
+                    /* @pjs preload="laDefense.jpg"; */
+                    PImage b;
                     b = loadImage(orange);
                     background(b);
                     scene_counter +=1;
