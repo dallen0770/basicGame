@@ -47,22 +47,69 @@
             
         void keyPressed(){
             // in scene 1
-              if (keyCode == 39 && scene_counter==0) {
-                    background(orange);
-                    scene_counter +=1;
-                } else if (keyCode == 37 && scene_counter ==0) {
-                    background(blue);
-                    scene_counter +=1;
-                } else if (keyCode == 39 && scene_counter==1) {//in scene 2
-                    background(pink);
-                    scene_counter +=1;
-            } else if (keyCode == 39 && scene_counter==2) {//in scene 3
-                    background(yellow);
-                    scene_counter +=1;
-            } else if (keyCode == 37 && scene_counter ==2) {
-                    background(green);
-                    scene_counter +=1;
-            }
+               // in scene 1
+              if (keyCode == 39 && scene_counter== 0) {
+              
+                    //right arrow is pressed (only option)
+                    //background(orange);
+                    scene_counter = 1;
+                    //@ story page
+                    
+                } else if (keyCode == 37 && scene_counter == 1) {
+                
+                    //no is selected on story page
+                    //background(blue);
+                    scene_counter = 2;
+                    //FAIL PAGE
+                    
+                } else if (keyCode == 39 && scene_counter== 1) {
+                
+                    //yes is selected on story page
+                    //background(pink);
+                    scene_counter = 3;
+                    //SUCCEED PAGE
+                    
+                } 
+                //ONLY WAY TO PROGRESS; IN MAZE INFO
+                else if (keyCode == 39 && scene_counter == 3) {
+                
+                    //background(yellow);
+                    scene_counter = 4;
+                    //NOW IN MAZE
+                    
+                } 
+                
+                //not sure how to detect when done with maze
+                //when figured out change condition keyCode == 39 !!
+                
+                else if (keyCode == 37 && scene_counter == 5) {
+                
+                    //OUT OF MAZE CHOICE PAGE
+                    //chose to approach (left arrow)
+                    //background(green);
+                    scene_counter = 6;
+                    //now 7 pages of story
+                    
+                } else if (keyCode == 39 && scene_counter == 5) { 
+                
+                    //chose to hide (right arrow)
+                    scene_counter = 14;
+                    //now 4-5 pages of story
+                    
+                } 
+                //APPROACH (page 6)
+                else if (keyCode == 39 && scene_counter == 6) {
+                
+                    scene_counter +=;
+                    
+                }
+                //end of approach story pages is 13, so hide starts at 14
+                //HIDE (page 14)
+                else if (keyCode == 39 && scene_counter == 7) {
+                
+                    scene_counter +=;
+                    
+                }
         }
    
         </script>
